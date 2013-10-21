@@ -8,7 +8,7 @@ set PATH $PATH /Users/riccardo/Lab/android/android-sdk-macosx/tools
 set PATH $PATH /Users/riccardo/Lab/android/android-sdk-macosx/platform-tools
 
 ### Add RVM to PATH for scripting
-set PATH /usr/local/bin:$PATH:$HOME/.rvm/bin 
+set PATH /usr/local/bin $PATH $HOME/.rvm/bin 
 
 ### npm
 set PATH $PATH:/usr/local/share/npm/bin/
