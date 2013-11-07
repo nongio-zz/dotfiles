@@ -1,4 +1,6 @@
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
+set guifont=Menlo:h16
+set lines=100             " maximized window default osx
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
