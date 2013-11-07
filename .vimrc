@@ -7,7 +7,6 @@ syntax enable             " enable syntax highlighting (previously syntax on).
 colorscheme monokai        " set colorscheme
 set number                " show line numbers
 set laststatus=2          " last window always has a statusline
-filetype indent on        " activates indenting for files
 set nohlsearch            " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 set ignorecase            " Make searches case-insensitive.
@@ -20,7 +19,6 @@ set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 set nowrap                " don't wrap text
-filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 " configure tags - add additional tags here or comment out not-used ones
 set tags+=~/.vim/tags/of
@@ -37,3 +35,15 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
+"ignore ti files for ctrlp file search
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/](.git|.hg|.svn|bower_components|node_modules|venel)$',
+    \ }
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+execute pathogen#infect()
+"map ctrl-n to nerdtree toggle open
+map <C-n> :NERDTreeToggle<CR>
+"map alt-left mouse to visual block selection
+vmap <A-LeftMouse> <C-v><LeftMouse>msgv`s
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+nmap <C-F> :Ack<space>
