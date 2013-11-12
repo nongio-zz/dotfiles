@@ -16,4 +16,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH=/usr/local/bin:$PATH
 
+export PATH="./node_modules/.bin:$PATH"
+
 alias ls='ls -G'
