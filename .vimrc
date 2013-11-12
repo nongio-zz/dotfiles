@@ -58,3 +58,8 @@ map <C-n> :NERDTreeToggle<CR>
 vmap <A-LeftMouse> <C-v><LeftMouse>msgv`s
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 nmap <C-F> :Ack<space>
+nmap <C-Tab> <C-W><C-W>
+inoremap <C-Space> <C-x><C-o>
+inoremap <C-@> <C-Space>  
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+
