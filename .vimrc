@@ -41,6 +41,17 @@ let g:ctrlp_custom_ignore = {
     \ }
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 execute pathogen#infect()
+" Close all open buffers on entering a window if the only
+" buffer that's left is the NERDTree buffer
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
 "map ctrl-n to nerdtree toggle open
 map <C-n> :NERDTreeToggle<CR>
 "map alt-left mouse to visual block selection
