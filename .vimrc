@@ -1,5 +1,5 @@
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
-set guifont=Menlo:h14
+set guifont=Menlo:h12
 set lines=100             " maximized window default osx
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 set t_Co=256              " enable 256-color mode.
@@ -59,6 +59,12 @@ vmap <A-LeftMouse> <C-v><LeftMouse>msgv`s
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 nmap <C-F> :Ack<space>
 nmap <C-Tab> <C-W><C-W>
+"window resize maps
+nmap <D-S-Left> <C-W><C-<>
+nmap <D-S-Right> <C-W><C->>
+nmap <D-S-Up> <C-W><C-->
+nmap <D-S-Down> <C-W><C-+>
+"automplete
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>  
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()

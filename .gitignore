@@ -1,3 +1,5 @@
 /.config/configstore/
 
 /.config/fish/fish_history
+.DS_Store
+*.swp
