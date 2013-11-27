@@ -68,4 +68,6 @@ nmap <D-S-Down> <C-W><C-+>
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>  
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
