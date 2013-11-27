@@ -72,6 +72,7 @@ autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+nmap <C-T> :TagbarToggle<CR>
 " persistent undo file
 set undodir=~/.vim/undo
 set undofile
