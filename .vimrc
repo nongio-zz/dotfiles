@@ -64,6 +64,7 @@ nmap <D-S-Left> <C-W><C-<>
 nmap <D-S-Right> <C-W><C->>
 nmap <D-S-Up> <C-W><C-->
 nmap <D-S-Down> <C-W><C-+>
+map <C-J> :call JsBeautify()<cr>
 "automplete
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>  
