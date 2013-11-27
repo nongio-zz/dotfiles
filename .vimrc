@@ -72,3 +72,11 @@ autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+"trailing white spaces
+if has('autocmd')
+    " Show trailing whitespace:
+    highlight ExtraWhitespace ctermbg=red guibg=red
+    autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+    match ExtraWhitespace /\s\+$/
+    autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+endif
