@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/vim-jsbeautify"]
 	path = .vim/bundle/vim-jsbeautify
     url = https://github.com/maksimr/vim-jsbeautify.git
+[submodule ".vim/bundle/javascript-libraries-syntax.vim"]
+	path = .vim/bundle/javascript-libraries-syntax.vim
+    url = https://github.com/othree/javascript-libraries-syntax.vim
