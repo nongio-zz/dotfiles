@@ -72,6 +72,9 @@ autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+" persistent undo file
+set undodir=~/.vim/undo
+set undofile
 "trailing white spaces
 if has('autocmd')
     " Show trailing whitespace:
