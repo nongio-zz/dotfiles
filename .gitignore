@@ -3,3 +3,5 @@
 /.config/fish/fish_history
 .DS_Store
 *.swp
+
+/.vim/.netrwhist
