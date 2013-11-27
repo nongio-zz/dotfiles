@@ -10,3 +10,12 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule ".vim/bundle/tern_for_vim"]
+	path = .vim/bundle/terno_for_vim
+	url = https://github.com/marijnh/tern_for_vim.git
+[submodule ".vim/bundle/vim-jsbeautify"]
+	path = .vim/bundle/vim-jsbeautify
+    url = https://github.com/maksimr/vim-jsbeautify.git
