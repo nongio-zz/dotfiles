@@ -11,15 +11,15 @@ PATH=$PATH:$HOME/.rvm/bin
 # heroku toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-#bash completion
+# bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
-#nvm
+# nvm
 . ~/.nvm/nvm.sh
 
-#powerline shell!!!
+# powerline shell!!!
 function _update_ps1() {
     export PS1="$(~/powerline-shell.py $? 2> /dev/null)"
 }
