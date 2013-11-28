@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/javascript-libraries-syntax.vim"]
 	path = .vim/bundle/javascript-libraries-syntax.vim
     url = https://github.com/othree/javascript-libraries-syntax.vim
+[submodule "powerline-shell"]
+	path = powerline-shell
+    url = https://github.com/milkbikis/powerline-shell
