@@ -1,2 +1,2 @@
-#just read the basrc file
+#just read the .bashrc file
 [[ -r ~/.bashrc ]] && . ~/.bashrc
