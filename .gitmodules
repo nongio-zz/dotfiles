@@ -25,3 +25,6 @@
 [submodule "powerline-shell"]
 	path = powerline-shell
     url = https://github.com/milkbikis/powerline-shell
+[submodule ".vim/bundle/YouCompleteMe"]
+    path = .vim/bundle/YouCompleteMe
+    url = https://github.com/Valloric/YouCompleteMe
