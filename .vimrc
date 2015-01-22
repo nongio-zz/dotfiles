@@ -164,3 +164,6 @@ let g:mta_filetypes = {
     \ 'xml' : 1,
     \ 'liquid' : 1,
     \}
+
+let g:tern_show_argument_hints = 'on_move'
+let g:tern_map_keys=1
